@@ -2,7 +2,7 @@ import logo from '/public/eclipse-logo-only.jpg'
 import Image from 'next/image'
 const Nav = ({ navItems }) => {
   return (
-    <div className='sticky top-0 w-full min-h-20 h-20 flex justify-between outline outline-[1px] outline-[--accent] items-center bg-[--dark] text-[--light]'>
+    <nav className='sticky z-10 top-0 w-full min-h-20 h-20 flex justify-between outline outline-[1px] outline-[--accent] items-center bg-[--dark] text-[--light]'>
       <div>
         <a href='#top'>
           <Image
@@ -29,7 +29,7 @@ const Nav = ({ navItems }) => {
           </a>
         ))}
       </ul>
-    </div>
+    </nav>
   )
 }
 
