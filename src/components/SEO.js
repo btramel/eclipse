@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import logo from '/public/eclipse.jpg'
-import logoNoText from '/public/eclipse-logo-only.jpg'
+import logo from '/public/siding.jpg'
 const SEO = ({ site }) => {
   const {
-    title = 'Eclipse Construction',
-    description = "Minnesota's most trusted and reliable storm restoration contractors.",
+    title = "Eclipse Construction | Minnesota's Premier Exterior Restoration Company",
+    description = "Minnesota's most reliable storm restoration contractors.",
     url = 'https://www.eclipseconstructionmn.com',
     image = logo,
     author = 'Brad Tramel',
-    favicon = logoNoText,
+    favicon = '/favicon.ico',
   } = site
 
   return (
@@ -29,7 +28,7 @@ const SEO = ({ site }) => {
       <meta property='og:image:height' content='627' />
       <meta property='og:image:type' content='image/jpg' />
 
-      <link rel='icon' href={favicon} />
+      <link rel='shortcut icon' href={favicon} />
     </Head>
   )
 }

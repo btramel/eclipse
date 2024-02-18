@@ -34,6 +34,7 @@ const Services = () => {
               <Image
                 src={roofing}
                 style={{ objectFit: 'cover', height: '100%' }}
+                alt='home from front yard'
               />
             </div>
           </Card>
@@ -42,6 +43,7 @@ const Services = () => {
               <Image
                 src={siding}
                 style={{ objectFit: 'cover', height: '100%' }}
+                alt='side shot of home, including siding and windows'
               />
             </div>
             <div className='w-1/2 flex flex-col gap-2 p-6'>
@@ -71,6 +73,7 @@ const Services = () => {
               <Image
                 src={windows}
                 style={{ objectFit: 'cover', height: '100%' }}
+                alt='side shot of home, including siding and windows'
               />
             </div>
           </Card>
@@ -79,6 +82,7 @@ const Services = () => {
               <Image
                 src={gutters}
                 style={{ objectFit: 'cover', height: '100%' }}
+                alt='side shot of home, including gutters'
               />
             </div>
             <div className='w-1/2 flex flex-col gap-2 p-6'>

@@ -5,7 +5,6 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Inspection from '@/components/Inspection'
-import logo from '/public/eclipse-logo-only.jpg'
 export default function Home() {
   return (
     <main
@@ -29,8 +28,10 @@ export default function Home() {
         <p>MN #BC794989</p>
         <a href='#top'>
           <Image
-            src={logo}
-            className='h-20 w-20 ml-4'
+            src='/eclipse-logo-only.jpg'
+            width={80}
+            height={80}
+            className='ml-4'
             alt='Eclipse Construction'
             title='Eclipse Construction'
           />

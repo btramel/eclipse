@@ -1,7 +1,6 @@
 import Reveal from './Reveal'
 import roof from '/public/roof-dark.jpg'
 import Image from 'next/image'
-import eclipse from '/public/eclipse-logo-only.jpg'
 const Hero = () => {
   return (
     <section
@@ -10,8 +9,12 @@ const Hero = () => {
     >
       <div className='w-3/4'>
         <Image
-          src={eclipse}
+          src='/eclipse-logo-only.jpg'
+          style={{ objectFit: 'cover' }}
+          width={500}
+          height={500}
           className='absolute z-0 opacity-5 object-cover w-3/5 right-0 top-0'
+          alt='Eclipse Construction'
         />
       </div>
       <div className='pl-5 sm:pl-10 pt-48 pb-2 flex flex-col gap-2 max-w-[850px]'>

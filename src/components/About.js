@@ -26,7 +26,12 @@ const About = () => {
             contributing to the vision you have for your post-storm home.
           </p>
         </div>
-        <Image src={crew} height={400} style={{ objectFit: 'contain' }} />
+        <Image
+          src={crew}
+          height={400}
+          style={{ objectFit: 'contain' }}
+          alt='roofing crew at work'
+        />
       </div>
     </section>
   )
