@@ -11,21 +11,19 @@ const Services = () => {
   return (
     <section
       id='services'
-      className='relative flex flex-col min-h-screen justify-center bg-[--light] text-[--dark] w-full p-5 sm:p-10'
+      className='relative py-20 sm:py-40  flex flex-col min-h-screen justify-center bg-[--light] text-[--dark] w-full p-5 sm:p-10'
     >
-      <Reveal>
-        <h1 className='pt-20 text-[10vw] sm:text-7xl leading-[10vw]'>
-          Services
-        </h1>
-      </Reveal>
-      <div className='p-4 sm:p-8'>
+      <div className='p-4 sm:p-8 w-full'>
         <CardContainer>
+          <Reveal>
+            <h1 className='text-[10vw] sm:text-7xl leading-[10vw]'>Services</h1>
+          </Reveal>
           <Card>
             <div className='w-1/2 flex flex-col gap-2 p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Roofing</h1>
               </Reveal>
-              <p className='text-xs sm:text-sm'>
+              <p className='text-xs lg:text-sm'>
                 From urgent repairs and replacements to restorations – our local
                 experts provide top-notch service at competitive rates. We boast
                 a long list of satisfied customers and a portfolio of successful
@@ -40,11 +38,17 @@ const Services = () => {
             </div>
           </Card>
           <Card>
+            <div className={`w-1/2 h-full overflow-hidden`}>
+              <Image
+                src={siding}
+                style={{ objectFit: 'cover', height: '100%' }}
+              />
+            </div>
             <div className='w-1/2 flex flex-col gap-2 p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Siding</h1>
               </Reveal>
-              <p className='text-xs sm:text-sm'>
+              <p className='text-xs lg:text-sm'>
                 With roots in the Midwest, we understand the unique needs of
                 this region’s weather patterns. Our team stays ahead of building
                 codes, industry standards, and safety protocols. From product
@@ -52,19 +56,13 @@ const Services = () => {
                 your specific challenges.
               </p>
             </div>
-            <div className={`w-1/2 h-full overflow-hidden`}>
-              <Image
-                src={siding}
-                style={{ objectFit: 'cover', height: '100%' }}
-              />
-            </div>
           </Card>
           <Card>
             <div className='w-1/2 flex flex-col gap-2 p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Windows</h1>
               </Reveal>
-              <p className='text-xs sm:text-sm'>
+              <p className='text-xs lg:text-sm'>
                 We specialize at installing windows that weather-proof your home
                 no matter the season.
               </p>
@@ -77,20 +75,20 @@ const Services = () => {
             </div>
           </Card>
           <Card>
-            <div className='w-1/2 flex flex-col gap-2 p-6'>
-              <Reveal>
-                <h1 className='text-lg sm:text-2xl'>Gutters</h1>
-              </Reveal>
-              <p className='text-xs sm:text-sm'>
-                Our team repairs and replaces gutters for maximum efficiency,
-                durability, and longevity.
-              </p>
-            </div>
             <div className={`w-1/2 h-full overflow-hidden`}>
               <Image
                 src={gutters}
                 style={{ objectFit: 'cover', height: '100%' }}
               />
+            </div>
+            <div className='w-1/2 flex flex-col gap-2 p-6'>
+              <Reveal>
+                <h1 className='text-lg sm:text-2xl'>Gutters</h1>
+              </Reveal>
+              <p className='text-xs lg:text-sm'>
+                Our team repairs and replaces gutters for maximum efficiency,
+                durability, and longevity.
+              </p>
             </div>
           </Card>
         </CardContainer>

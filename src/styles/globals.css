@@ -6,6 +6,10 @@
   background: #fddb31;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

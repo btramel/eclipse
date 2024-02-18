@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main
       id='top'
-      className={`flex scroll-smooth min-h-screen flex-col items-center justify-between bg-[--dark] text-[--light] font-sans text-sm sm:text-base`}
+      className={`flex min-h-screen flex-col items-center justify-between bg-[--dark] text-[--light] font-sans text-sm sm:text-base`}
     >
       <SEO site={{ title: 'Eclipse Construction' }} />
 
@@ -25,7 +25,7 @@ export default function Home() {
       <Services />
       <About />
       <Inspection />
-      <footer className='flex justify-between items-center h-full w-full p-4 border-[1px] border-t-[--accent]'>
+      <footer className='flex justify-between items-center h-full w-full p-4 border-[1px] border-[--dark] border-t-[--accent]'>
         <p>MN #BC794989</p>
         <a href='#top'>
           <Image
