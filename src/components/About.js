@@ -10,7 +10,7 @@ const About = () => {
       <h1 className='text-[10vw] sm:text-7xl leading-[10vw] flex flex-col'>
         <Reveal>Our Story</Reveal>
       </h1>
-      <div className='relative flex flex-col lg:flex-row w-full justify-around items-center'>
+      <div className='relative flex flex-col lg:flex-row w-full justify-around items-center gap-4 sm:gap-1'>
         <div className='flex flex-col gap-4'>
           <p className='max-w-[600px]'>
             Over the past decade, we developed expertise and trust within the

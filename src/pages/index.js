@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main
       id='top'
-      className={`flex min-h-screen flex-col items-center justify-between bg-[--dark] text-[--light] font-sans text-sm sm:text-base`}
+      className={`flex min-h-screen max-w-[2000px] mx-auto flex-col items-center justify-between bg-[--dark] text-[--light] font-sans text-sm sm:text-base`}
     >
       <SEO site={{ title: 'Eclipse Construction' }} />
 
@@ -24,9 +24,9 @@ export default function Home() {
       <Services />
       <About />
       <Inspection />
-      <footer className='flex justify-between items-center h-full w-full p-4 border-[1px] border-[--dark] border-t-[--accent]'>
+      <footer className='flex text-xs sm:text-sm justify-between items-center h-full w-full p-4 border-[1px] border-[--dark] border-t-[--accent]'>
         <p>MN #BC794989</p>
-        <a href='#top'>
+        <a href='#top' className='hidden sm:block'>
           <Image
             src='/eclipse-logo-only.jpg'
             width={80}
@@ -37,7 +37,10 @@ export default function Home() {
           />
         </a>
         <div className='flex flex-col gap-2 h-full'>
-          <a href='mailto:office@eclipseconstructionmn.com'>
+          <a
+            href='mailto:office@eclipseconstructionmn.com'
+            className='hover:no-underline hover:text-[--accent]'
+          >
             office@eclipseconstructionmn.com
           </a>
           <p>507-369-4988</p>

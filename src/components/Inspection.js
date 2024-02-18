@@ -11,9 +11,11 @@ const Inspection = () => {
       </h1>
       <p className='max-w-[700px]'>
         Did your home suffer storm damage? Want us to handle the complicated
-        inspection, insurance, and repairs process? Submit your contact
-        information below and one of our representatives will contact you
-        shortly to discuss how we can best help you.
+        inspection, insurance, and repairs process?
+      </p>
+      <p className='max-w-[700px]'>
+        Submit your contact information below and one of our representatives
+        will contact you shortly to discuss how we can best help you.
       </p>
       <form
         target='_blank'
@@ -27,17 +29,16 @@ const Inspection = () => {
               <input
                 type='text'
                 name='name'
-                class='form-control p-3 rounded-sm w-4/5 sm:w-full'
+                class='form-control p-3 rounded-sm w-full sm:w-full'
                 placeholder='Full Name'
                 required
               />
             </div>
             <div class='col'>
               <input
-                type='number'
                 name='phone'
-                class='form-control p-3 rounded-sm w-4/5 sm:w-full'
-                placeholder='Phone Number'
+                class='form-control p-3 rounded-sm w-full sm:w-full'
+                placeholder='Phone'
                 required
               />
             </div>
@@ -47,7 +48,7 @@ const Inspection = () => {
               <input
                 type='email'
                 name='email'
-                class='form-control p-3 rounded-sm w-4/5 sm:w-full'
+                class='form-control p-3 rounded-sm w-full'
                 placeholder='Email Address'
                 required
               />
@@ -56,7 +57,7 @@ const Inspection = () => {
               <input
                 type='text'
                 name='address'
-                class='form-control p-3 rounded-sm w-4/5 sm:w-full'
+                class='form-control p-3 rounded-sm w-full'
                 placeholder='Home Address'
               />
             </div>

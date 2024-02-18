@@ -13,22 +13,22 @@ const Services = () => {
       id='services'
       className='relative py-20 sm:py-40  flex flex-col min-h-screen justify-center bg-[--light] text-[--dark] w-full p-5 sm:p-10'
     >
-      <div className='p-4 sm:p-8 w-full'>
+      <div className='p-2 sm:p-8 w-full'>
         <CardContainer>
           <Reveal>
             <h1 className='text-[10vw] sm:text-7xl leading-[10vw]'>Services</h1>
           </Reveal>
           <Card>
-            <div className='w-1/2 flex flex-col gap-2 p-6'>
+            <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Roofing</h1>
               </Reveal>
-              <p className='text-xs lg:text-sm'>
-                From urgent repairs and replacements to restorations – our local
-                experts provide top-notch service at competitive rates. We boast
-                a long list of satisfied customers and a portfolio of successful
-                projects with our fast turnarounds and quality craftsmanship.
-              </p>
+              <ul className='text-xs list-disc pl-4'>
+                <li>Replacements</li>
+                <li>Repairs</li>
+                <li>Residential</li>
+                <li>Commercial - including flat roofing</li>
+              </ul>
             </div>
             <div className={`w-1/2 h-full overflow-hidden`}>
               <Image
@@ -46,21 +46,20 @@ const Services = () => {
                 alt='side shot of home, including siding and windows'
               />
             </div>
-            <div className='w-1/2 flex flex-col gap-2 p-6'>
+            <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Siding</h1>
               </Reveal>
-              <p className='text-xs lg:text-sm'>
-                With roots in the Midwest, we understand the unique needs of
-                this region’s weather patterns. Our team stays ahead of building
-                codes, industry standards, and safety protocols. From product
-                selection to installation, we provide solutions that address
-                your specific challenges.
-              </p>
+              <ul className='text-xs list-disc pl-4'>
+                <li>Replacements</li>
+                <li>Repairs</li>
+                <li>Residential and Commercial</li>
+                <li>Vinyl, metal, wood, and more!</li>
+              </ul>
             </div>
           </Card>
           <Card>
-            <div className='w-1/2 flex flex-col gap-2 p-6'>
+            <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Windows</h1>
               </Reveal>
@@ -85,7 +84,7 @@ const Services = () => {
                 alt='side shot of home, including gutters'
               />
             </div>
-            <div className='w-1/2 flex flex-col gap-2 p-6'>
+            <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
                 <h1 className='text-lg sm:text-2xl'>Gutters</h1>
               </Reveal>

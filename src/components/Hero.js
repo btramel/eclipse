@@ -17,7 +17,7 @@ const Hero = () => {
           alt='Eclipse Construction'
         />
       </div>
-      <div className='pl-5 sm:pl-10 pt-48 pb-2 flex flex-col gap-2 max-w-[850px]'>
+      <div className='px-5 sm:pl-10 pt-48 pb-2 flex flex-col gap-2 max-w-[850px]'>
         <h1 className='font-black text-[10vw] sm:text-7xl leading-[10vw] flex flex-col'>
           <Reveal>Eclipse</Reveal>
           <Reveal>Construction</Reveal>
