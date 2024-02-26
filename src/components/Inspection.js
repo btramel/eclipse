@@ -19,7 +19,7 @@ const Inspection = () => {
       </p>
       <form
         target='_blank'
-        action='https://formsubmit.co/bradtramel@gmail.com'
+        action='https://formsubmit.co/office@eclipseconstructionmn.com'
         method='POST'
         className='flex flex-col gap-4 text-[--dark] sm:w-3/5 lg:w-2/5'
       >
