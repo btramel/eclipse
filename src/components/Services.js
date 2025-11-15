@@ -44,7 +44,7 @@ const Services = () => {
               </ul>
               <CTA />
             </div>
-            <div className={`w-1/2 h-full overflow-hidden`}>
+            <div className='w-1/2 h-full overflow-hidden'>
               <Image
                 src={roofing}
                 style={{ objectFit: 'cover', height: '100%' }}
