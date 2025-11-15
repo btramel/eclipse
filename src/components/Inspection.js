@@ -1,6 +1,17 @@
 import Reveal from './Reveal'
 
 const Inspection = () => {
+  const CTA = ({ label, link }) => {
+    return (
+      <a
+        href={link}
+        className='hover:no-underline whitespace-nowrap my-5 text-sm  text-center w-min text-[--dark] hover:text-[--accent] p-5 bg-[--accent] hover:bg-[--dark] hover:border-[--accent] border-[--accent] border-2'
+      >
+        {label}
+      </a>
+    )
+  }
+
   return (
     <section
       id='inspection'
@@ -14,70 +25,13 @@ const Inspection = () => {
         inspection, insurance, and repairs process?
       </p>
       <p className='max-w-[700px]'>
-        Submit your contact information below and one of our representatives
-        will contact you shortly to discuss how we can best help you.
+        Get in touch and tell us your story. We&apos;ll make a plan and get to
+        work.
       </p>
-      <form
-        target='_blank'
-        action='https://formsubmit.co/769b00241916e4c872a21b0d35c21046'
-        method='POST'
-        className='flex flex-col gap-4 text-[--dark] sm:w-3/5 lg:w-2/5'
-      >
-        <div class='form-group flex flex-col gap-4'>
-          <div class='form-row flex flex-row gap-4'>
-            <div class='col'>
-              <input
-                type='text'
-                name='name'
-                class='form-control p-3 rounded-sm w-full sm:w-full'
-                placeholder='Full Name'
-                required
-              />
-            </div>
-            <div class='col'>
-              <input
-                name='phone'
-                class='form-control p-3 rounded-sm w-full sm:w-full'
-                placeholder='Phone'
-                required
-              />
-            </div>
-          </div>
-          <div class='form-row flex flex-col gap-4'>
-            <div class='col'>
-              <input
-                type='email'
-                name='email'
-                class='form-control p-3 rounded-sm w-full'
-                placeholder='Email Address'
-                required
-              />
-            </div>
-            <div class='col'>
-              <input
-                type='text'
-                name='address'
-                class='form-control p-3 rounded-sm w-full'
-                placeholder='Home Address'
-              />
-            </div>
-          </div>
-        </div>
-        <div class='form-group'>
-          <textarea
-            placeholder='Additional info'
-            class='form-control p-3 rounded-sm w-full'
-            name='additional info'
-            rows='10'
-          />
-        </div>
-        <button
-          type='submit'
-          class='p-3 rounded-lg w-full bg-[--accent] text-[--dark] hover:bg-[--dark] hover:text-[--accent] border border-[--accent]'
-        >
-          Submit Form
-        </button>
-      </form>
+      <div className='flex gap-5'>
+        <CTA label='Call Us' link='tel:5073694988' />
+        <CTA label='Email Us' link='mailto:office@eclipseconstructionmn.com' />
+      </div>
     </section>
   )
 }

@@ -21,11 +21,11 @@ const Nav = ({ navItems }) => {
             className={`border-l-[1px] p-5 border-l-[--accent] w-full sm:w-1/3 text-center flex items-center justify-center h-full hover:no-underline hover:text-[--accent] ${
               item.mobile === 'hidden' && 'hidden sm:flex'
             } ${
-              item.title === 'free inspection' &&
+              item.title === '507-369-4988' &&
               'bg-[--accent] text-[--dark] hover:bg-[--dark] hover:text-[--accent]'
             }`}
           >
-            <li className='capitalize'>{item.title}</li>
+            <li className='capitalize whitespace-nowrap'>{item.title}</li>
           </a>
         ))}
       </ul>

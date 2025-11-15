@@ -8,6 +8,17 @@ import gutters from '/public/gutters.jpg'
 import windows from '/public/windows.jpg'
 
 const Services = () => {
+  const CTA = () => {
+    return (
+      <a
+        href='tel:5073694988'
+        className='hover:no-underline whitespace-nowrap my-5 text-xs p-3  text-center w-min text-[--dark] hover:text-[--accent] md:sp-5 bg-[--accent] hover:bg-[--dark] hover:border-[--accent] border-[--accent] border-2'
+      >
+        Free Inspection
+      </a>
+    )
+  }
+
   return (
     <section
       id='services'
@@ -21,14 +32,17 @@ const Services = () => {
           <Card>
             <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
-                <h1 className='text-lg sm:text-2xl'>Roofing</h1>
+                <h1 className='text-lg sm:text-2xl underline decoration-[--accent] underline-offset-2'>
+                  Roofing
+                </h1>
               </Reveal>
-              <ul className='text-xs list-disc pl-4'>
+              <ul className='text-xs md:text-base list-disc pl-4'>
                 <li>Replacements</li>
                 <li>Repairs</li>
                 <li>Residential</li>
                 <li>Commercial - including flat roofing</li>
               </ul>
+              <CTA />
             </div>
             <div className={`w-1/2 h-full overflow-hidden`}>
               <Image
@@ -48,25 +62,31 @@ const Services = () => {
             </div>
             <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
-                <h1 className='text-lg sm:text-2xl'>Siding</h1>
+                <h1 className='text-lg sm:text-2xl underline decoration-[--accent] underline-offset-2'>
+                  Siding
+                </h1>
               </Reveal>
-              <ul className='text-xs list-disc pl-4'>
+              <ul className='text-xs md:text-base list-disc pl-4'>
                 <li>Replacements</li>
                 <li>Repairs</li>
                 <li>Residential and Commercial</li>
                 <li>Vinyl, metal, wood, and more!</li>
               </ul>
+              <CTA />
             </div>
           </Card>
           <Card>
             <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
-                <h1 className='text-lg sm:text-2xl'>Windows</h1>
+                <h1 className='text-lg sm:text-2xl underline decoration-[--accent] underline-offset-2'>
+                  Windows
+                </h1>
               </Reveal>
-              <p className='text-xs lg:text-sm'>
+              <p className='text-xs md:text-base'>
                 We specialize at installing windows that weather-proof your home
                 no matter the season.
               </p>
+              <CTA />
             </div>
             <div className={`w-1/2 h-full overflow-hidden`}>
               <Image
@@ -86,12 +106,15 @@ const Services = () => {
             </div>
             <div className='w-1/2 flex flex-col gap-2 p-2 sm:p-6'>
               <Reveal>
-                <h1 className='text-lg sm:text-2xl'>Gutters</h1>
+                <h1 className='text-lg sm:text-2xl underline decoration-[--accent] underline-offset-2'>
+                  Gutters
+                </h1>
               </Reveal>
-              <p className='text-xs lg:text-sm'>
+              <p className='text-xs md:text-base'>
                 Our team repairs and replaces gutters for maximum efficiency,
                 durability, and longevity.
               </p>
+              <CTA />
             </div>
           </Card>
         </CardContainer>

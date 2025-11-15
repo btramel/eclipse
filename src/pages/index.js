@@ -17,7 +17,7 @@ export default function Home() {
         navItems={[
           { title: 'services', link: '#services', mobile: 'hidden' },
           { title: 'our story', link: '#about', mobile: 'hidden' },
-          { title: 'free inspection', link: '#inspection' },
+          { title: '507-369-4988', link: '#inspection' },
         ]}
       />
       <Hero />
@@ -43,7 +43,12 @@ export default function Home() {
           >
             office@eclipseconstructionmn.com
           </a>
-          <p>507-369-4988</p>
+          <a
+            href='tel:5073694988'
+            className='hover:no-underline hover:text-[--accent]'
+          >
+            507-369-4988
+          </a>
         </div>
       </footer>
     </main>
